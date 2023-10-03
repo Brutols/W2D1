@@ -1,0 +1,112 @@
+#card {
+  width: 25%;
+  aspect-ratio: 1/1.2;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+#card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#shade {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5999649859943977) 0%,
+    rgba(0, 0, 0, 0.1966036414565826) 50%,
+    rgba(0, 0, 0, 0.5999649859943977) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5999649859943977) 0%,
+    rgba(0, 0, 0, 0.1966036414565826) 50%,
+    rgba(0, 0, 0, 0.5999649859943977) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5999649859943977) 0%,
+    rgba(0, 0, 0, 0.1966036414565826) 50%,
+    rgba(0, 0, 0, 0.5999649859943977) 100%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hover{
+    display: none;
+}
+
+#card:hover .hover{
+    display: block;
+}
+
+#savebtn{
+  position: absolute;
+  width: 30%;
+  height: 15%;
+  top: 3%;
+  left: 65%;
+  background-color: rgb(226, 28, 28);
+  border-radius: 40px;
+  border: none;
+  color: rgb(255,255,255);
+  font-size: 1.5em;
+  animation-name: savebtn;
+  animation-duration: 1s;
+}
+
+#btnbottom{
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  animation-name: btnbottom;
+  animation-duration: 1s;
+}
+
+#search{
+  border: none;
+  background-color: rgb(235, 237, 237);
+  border-radius: 40px;
+  width: 50%;
+  height: 100%;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.icon{
+  border: none;
+  background-color: rgba(235, 237, 237, 0.70);
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  font-size: 1.2em;
+}
+
+#dots{
+  padding-top: 4px;
+}
+
+.btn{
+  margin-inline: 10px;
+}
+
+#savebtn:hover, #search:hover, .icon:hover{
+  cursor: pointer;
+}
+
+@keyframes savebtn {
+  0%   {left:65%; top:0%;}
+  100% {left:65%; top:3%;}
+}
+
+@keyframes btnbottom {
+  0%   {bottom:0%;}
+  100% {bottom:3%;}
+}
