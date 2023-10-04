@@ -85,6 +85,7 @@
   height: 100%;
   font-size: 1em;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .icon{
@@ -94,6 +95,7 @@
   aspect-ratio: 1/1;
   border-radius: 50%;
   font-size: 1.2em;
+  transition: 0.3s;
 }
 
 #dots{
